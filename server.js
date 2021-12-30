@@ -30,7 +30,7 @@ app.use(function (req, res, next) {
 app.use('/api/v1/', mainRoute)
 app.use('/api/v1/upload', uploadRoute)
 
-const port = process.env.PORT | 3000
+const port = process.env.PORT || 3000
 app.listen(port, () => {
     console.log(`server is running on http://localhost:${port}`);
 })
